@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </head>
+  <body>
+    <div class="container">
+     
+    </div>
+  </body>
+  <body style="background-image: url(/images/HD-wallpaper-clear-blue-sky-calm-clean-color-gradient-simple.jpg); background-size: fixed;">
+      <main class="container">
+  <br>
+          <div class="row mb-4" >
+              <div class="col-md-6">
+                  <h1>{{data.user.fullName}}</h1>
+              </div>
+              <br>
+              <div class="col-md-6 text-center">
+                  <img src="{{data.user.photo}}" alt="Johabbesburg">
+                </div>
+  
+          </div>
+          
+        
+          <div class="row text-bg-secondary">
+  <br>
+  <h1>{{data.city.name}}</h1>
+              <div class="col-md-5 ">
+               
+                  <img src="{{data.city.photo}}" class="rounded col-12 " alt="Jozi">
+              </div>
+              <div class="text-center col-md-6 ">
+              <p>{{data.city.description}}</p>
+              </div>
+  
+          </div>
+  
+  
+  
+          <div>
+  
+              <div >
+                  
+                  <br>
+                  <br>
+                  <br>
+                  <h1>Foreign language to be Learnt:</h1>
+                  <h3>{{data.foreignLanguage.language}}</h3>
+                  
+  
+                  <table class="table table-primary ">
+                      <thead>
+                        <tr>
+                          <th scope="col">English Phrase</th>
+                          <th scope="col">Foreign Phrase</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      {{#each data.foreignLanguage.phrases}}
+                        <tr>
+                          <td>{{englishPhrase}}</td>
+                          <td>{{foreignLanguage}}</td>
+                        </tr>
+                        {{/each}}
+                      </tbody>
+                    </table>
+                    
+              </div>
+              
+              <div class="text-center text-bg-secondary">
+              <h1>{{data.course}}</h1>
+                    <h2>{{data.Institution}}</h2>
+                    <h3>Favourite Subjects</h3>
+  
+              </div>
+  
+          </div>
+  
+  
+  
+  
+          <div>
+  
+  
+              <div class="row ">
+                  <br>
+                  {{#each data.favouriteSubjects}}
+                  <div class="card mb-3" style="max-width: 540px;">
+                      <div class="row g-0">
+                        <div class="col-md-4 order border-primary">
+                          <img src="{{photo}}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">{{name}}</h5>
+                            <p class="card-text">{{description}}</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {{/each}}
+              </div>
+              <div>
+  
+              </div>
+  
+          </div>
+  
+  
+  
+  <section>
+          <a href="index.html">Main page</a>
+      </section>
+      <a href="https://www.linkedin.com/your-linkedin-profile" target="_blank">LinkedIn</a>
+  
+  <!--0724081533-->
+  <p>Phone: +1-123-456-7890</p>
+  
+  
+  
+      </main>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
